@@ -71,3 +71,26 @@ header .main_nav ul li {
 header .search_icon {
     background: url(./img/search_icon.png);
 }
+
+/* main */
+
+main .special_img_text {
+    display: flex;
+}
+
+main .special_img{
+    width: 500px;
+    height: 264px;
+}
+
+main .special_text div {
+    padding: 19px 25px 19px 19px;
+    margin: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+}
+
+/* main .special_text:hover {
+    special_hover()
+} */
