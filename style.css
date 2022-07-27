@@ -1,12 +1,73 @@
 * {
     margin: 0;
     padding: 0;
+    /* font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif; */
 }
 
-/* .cgv-main img {
+/* header */
+
+header .banner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 a {
+    text-decoration: none;
+}
+
+header .cgv_main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 6px 25px 5px;
+    margin: 0 81px 0 81px;
+}
+
+header .cgv_main img {
     width: 117px;
+    height: 53px;
 }
 
-.cgvmain span {
-    font-size: 16px;
-} */
+header .cgv_main span {
+    font-weight: 300;
+    font-size: 13px;
+    color: #222;
+    letter-spacing: 0.313em;
+}
+
+header .sub_nav ul {
+    display: flex;
+}
+
+header .sub_nav ul li {
+    display: flex;
+    flex-direction: column;
+
+}
+
+header .sub_nav ul li img {
+    width: 36px;
+    height: 36px;
+}
+
+header .sub_nav ul li span {
+    font-size: 13px;
+    color: #666;
+}
+
+header .main_nav {
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+header .main_nav ul {
+    margin: 0 86px 0 86px;
+    display: flex;
+}
+
+header .main_nav ul li {
+    margin: 10px;
+    list-style: none;
+}
+
+header .search_icon {
+    background: url(./img/search_icon.png);
+}

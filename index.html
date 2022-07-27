@@ -8,10 +8,16 @@
 </head>
 <body>
     <header>
-        <img src="https://adimg.cgv.co.kr/images/202207/NOPE/980x80.jpg" alt="nope">
+        <div class="banner_close">
+        <img class="banner" src="https://adimg.cgv.co.kr/images/202207/NOPE/980x80.jpg" alt="nope">
+        <a href="#" class="btn_ad_close" onclick="closeBanner()">
+            <img src="https://img.cgv.co.kr/sample/2015/ad_main_top/btn_ad_close.png" alt="닫기">
+        </a>
+        </div>
+        
         <div class="cgv_main">
             <h1>
-                <a href="#">
+                <a href="/index.html">
                     <img
                         src="https://img.cgv.co.kr/R2014/images/common/logo/logoRed.png"
                         alt="CGV" />
@@ -21,10 +27,22 @@
             </h1>
             <nav class="sub_nav">
                 <ul>
-                    <li a="#">로그인</li>
-                    <li a="#">회원가입</li>
-                    <li a="#">MY CGV</li>
-                    <li a="#">고객센터</li>
+                    <li>
+                        <img src="https://img.cgv.co.kr/R2014/images/common/ico/loginPassword.png" alt="로그인">
+                        <span>로그인</span>
+                    </li>
+                    <li>
+                        <img src="https://img.cgv.co.kr/R2014/images/common/ico/loginJoin.png" alt="회원가입">
+                        <span>회원가입</span>
+                    </li>
+                    <li>
+                       <img src="https://img.cgv.co.kr/R2014/images/common/ico/loginMember.png" alt="MY CGV">
+                        <span>MY CGV</span>
+                    </li>
+                    <li>
+                        <img src="https://img.cgv.co.kr/R2014/images/common/ico/loginCustomer.png" alt="고객센터">
+                        <span>고객센터</span>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -38,11 +56,21 @@
                 <li a="#">혜택</li>
             </ul>
         </nav>
-        <div class="search"></div>
+        <div class="search">
+            <input type="text" name="" id="">
+            <button type="button" class="search_icon"></button>
+        </div>
     </header>
 
     <main>      
-        <div class="video"></div>
+        <div class="video_contents">
+            <video controls width="100%">
+                <source
+                src="https://adimg.cgv.co.kr/images/202207/hansan/hansan_1080x608_0726.mp4"
+                type="video/webm"
+                >
+            </video>
+        </div>
 
         <section class="chart">
             <h3>무비차트</h3>
@@ -93,11 +121,10 @@
         </section>
 
         <section class="giftcon_wrap">
+            
             <div>
-                
             <h4>영화관람권</h4>
             <span>더보기</span>
-
             <span>
                 <img src="https://img.cgv.co.kr/GiftStore/Product/Pc/List/16094706927780.jpg" alt="CGV_영화관람권">
                 <span>CGV 영화관람권</span>
@@ -115,8 +142,52 @@
                 <span>4DX관람권</span>
                 <strong>19,000원</strong>
             </span>
-
             </div>
+
+            <div>
+                <h4>기프트카드</h4>
+                <span>더보기</span>
+                <span>
+                    <img src="https://img.cgv.co.kr/GiftStore/Product/Pc/List/15814124358590.jpg" alt="PACONINE A헝">
+                    <span>PACONINE A형</span>
+                    <strong>금액충전형</strong>
+                </span>
+    
+                <span>
+                    <img src="https://img.cgv.co.kr/GiftStore/Product/Pc/List/15814158039890.jpg" alt="PACONINE B헝">
+                    <span>PACONINE B형</span>
+                    <strong>금액충전형</strong>
+                </span>
+    
+                <span>
+                    <img src="https://img.cgv.co.kr/GiftStore/Product/Pc/List/15814162227570.jpg" alt="PACONINE B헝">
+                    <span>PACONINE C형</span>
+                    <strong>금액충전형</strong>
+                </span>
+                </div>
+
+                <div>
+            <h4>콤보</h4>
+            <span>더보기</span>
+            <span>
+                <img src="https://img.cgv.co.kr/GiftStore/Product/Pc/List/15463252009160.jpg" alt="CGV콤보">
+                <span>CGV콤보</span>
+                <strong>9,0000원</strong>
+            </span>
+
+            <span>
+                <img src="https://img.cgv.co.kr/GiftStore/Product/Pc/List/15463251537260.jpg" alt="더블콤보">
+                <span>더블콤보</span>
+                <strong>12,000원</strong>
+            </span>
+
+            <span>
+                <img src="https://img.cgv.co.kr/GiftStore/Product/Pc/List/15464065561050.jpg" alt="스몰세트">
+                <span>스몰세트</span>
+                <strong>6,500원</strong>
+            </span>
+            </div>
+
         </section>
 
         
@@ -151,4 +222,5 @@
     </footer>
 
 </body>
+<script src="./index.js"></script>
 </html>
