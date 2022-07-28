@@ -8,7 +8,10 @@
 
 header .banner {
     width: 100%;
+    height: 80px;
     margin: 0 auto;
+    object-fit: contain;
+    background-color: #001139;
 }
 
 header h1 a {
@@ -68,11 +71,21 @@ header .main_nav ul li {
     list-style: none;
 }
 
+/* header .chart {
+
+} */
+
 header .search_icon {
     background: url(./img/search_icon.png);
+    width: 20px;
+    height: 20px;
 }
 
 /* main */
+
+main {
+    position: relative;
+}
 
 main .special_img_text {
     display: flex;
