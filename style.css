@@ -4,6 +4,10 @@
     /* font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif; */
 }
 
+a {
+    text-decoration: none;
+}
+
 /* header */
 
 header .banner {
@@ -16,10 +20,6 @@ header .banner {
 
 header .banner_x {
     float: right;
-}
-
-header h1 a {
-    text-decoration: none;
 }
 
 header .cgv_main {
@@ -65,7 +65,7 @@ header .main_nav_box {
     border-top: 1px solid rgb(219, 219, 219);
     display: flex;
     justify-content: space-between;
-    padding: 0 250px 0 380px;
+    padding: 0 380px 0 250px;
 }
 
 header .main_nav ul {
@@ -78,9 +78,10 @@ header .main_nav ul li {
     list-style: none;
 }
 
-/* header .chart {
-
-} */
+header .main_nav a {
+    text-decoration: none;
+    color: #000;
+}
 
 header .search_icon {
     background: url(./img/search_icon.png);
@@ -94,8 +95,29 @@ main {
     position: relative;
 }
 
+main .special_title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 400px 0 380px;
+}
+
+main .special_title h3 {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+main .special_title h6 {
+    padding: 4px 32px 4px 15px;
+    font-size: 14px;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    background: transparent url(https://img.cgv.co.kr/R2014/images/common/ico/arrowR_8x13.png) calc(100% - 7px) center/8px 13px scroll no-repeat;
+}
+
 main .special_img_text {
     display: flex;
+    justify-content: center;
+    
 }
 
 main .special_img{
@@ -104,21 +126,58 @@ main .special_img{
 }
 
 main .special_text div {
+    width: 365px;
     padding: 19px 25px 19px 19px;
     margin: 8px;
-    border: 1px solid gray;
+    border-top: 1px solid rgb(202, 202, 202);
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+main .special_text .suite_cinema, .cine_livingroom, .four_dx, .cine_de_chef {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 25px 19px 19px;
+}
+
+main .special_text span {
+    padding: 2px 7px;
+    font-size: 14px;
+    color: #666;
+    background-color: #f6f6f6;
     border-radius: 5px;
 }
 
 main .video_contents {
     margin: 0 auto;
     width: 1000px;
+    margin-bottom: 30px;
 }
 
 main .video_contents_background {
     background-color: #000;
 }
 
-/* main .special_text:hover {
-    special_hover()
-} */
+main .chart_btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 380px 0 250px;
+}
+
+main .chart {
+    display: flex;
+}
+
+main .chart h3 {
+    font-size: 26px;
+}
+
+main .chart h3:first-child {
+    padding-right: 30px;
+    font-weight: 700;
+}
+
+main .chart h3:last-child {
+    font-weight: 500;
+    color: #666;
+}

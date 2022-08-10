@@ -49,12 +49,12 @@
         <div class="main_nav_box">
             <nav class="main_nav">
                 <ul>
-                    <li a="#">영화</li>
-                    <li a="#">극장</li>
-                    <li a="#" style="color: #fb4357">예매</li>
-                    <li a="#">스토어</li>
-                    <li a="#">이벤트</li>
-                    <li a="#">혜택</li>
+                    <li><a href="#">영화</a></li>
+                    <li><a href="#">극장</a></li>
+                    <li><a href="#" style="color: #fb4357">예매</a></li>
+                    <li><a href="#">스토어</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">혜택</a></li>
                 </ul>
             </nav>
             <div class="search">
@@ -75,23 +75,28 @@
                 </video>
             </div>
         </div>
-
-        <section class="chart">
-            <h3>무비차트</h3>
-            <h3>상영예정작</h3>
+<!-- 
+        <div class="chart_btn">
+            <div class="chart">
+                <h3>무비차트</h3>
+                <h3>상영예정작</h3>
+            </div>
             <h6>전체보기</h6>
-        </section>
+        </div>
 
-        <section class="event">
+        <div class="event">
             <h3>EVENT</h3>
             <button>멈춤버튼</button>
             <h6>전체보기</h6>
-        </section>
+        </div>
+             -->
 
-        <section class="special">
-            <h3>특별관</h3>
-            <h6>전체보기</h6>
-            
+        <div class="special">
+            <div class="special_title">
+                <h3>특별관</h3>
+                <h6>전체보기</h6>
+            </div>
+
             <div class="special_img_text">
 
                 <div>
@@ -99,31 +104,31 @@
                 </div>
 
                 <div class="special_text">
-                    <div class="suite_cinema">
+                    <div class="suite_cinema" onmouseover="handleChangeSpcialImage(0)">
                         <strong>SUITE CINEMA</strong>
                         <span>#호텔 컨셉의 프리미엄관</span>
                     </div>
 
-                    <div class="cine_livingroom">
+                    <div class="cine_livingroom" onmouseover="handleChangeSpcialImage(1)">
                             <strong>CINE & LIVINGROOM</strong>
                             <span>#신개념 소셜 상영관</span>
                     </div>
 
-                    <div class="four_dx">
+                    <div class="four_dx" onmouseover="handleChangeSpcialImage(2)">
                             <strong>4DX</strong>
                             <span>#모션시트 #오감체험</span>
                     </div>
 
-                    <div class="cine_de_chef">
+                    <div class="cine_de_chef" onmouseover="handleChangeSpcialImage(3)">
                             <strong>CINE de CHEF</strong>
                             <span>#쉐프가 있는 영화관</span>
                     </div>
                 </div>
             </div>
 
-        </section>
-
-        <section class="giftcon_wrap">
+        </div>
+<!-- 
+        <div class="giftcon_wrap">
             
             <div>
             <h4>영화관람권</h4>
@@ -191,7 +196,7 @@
             </span>
             </div>
 
-        </section>
+        </div>
 
         
 
@@ -222,7 +227,7 @@
 
         <input type="text" name="" id="">
         <button>GO</button>
-    </footer>
+    </footer> -->
 
 </body>
 <script src="./index.js"></script>
