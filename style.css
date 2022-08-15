@@ -18,9 +18,14 @@ header .banner {
     background-color: #001139;
 }
 
-header .banner_x {
-    float: right;
+/* header .banner_close {
+    position: absolute;
 }
+
+header .banner_x_img {
+    position: absolute;
+    clear: both;
+} */
 
 header .cgv_main {
     display: flex;
@@ -84,9 +89,12 @@ header .main_nav a {
 }
 
 header .search_icon {
-    background: url(./img/search_icon.png);
-    width: 20px;
-    height: 20px;
+    font-size: 0;
+    border: 0 none;
+    background: url(https://img.cgv.co.kr/R2014/images/common/ico/search.png);
+    background-size: 26px 26px;
+    width: 26px;
+    height: 26px;
 }
 
 /* main */
