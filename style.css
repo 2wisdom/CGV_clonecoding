@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #000;
     font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
 }
 
@@ -14,6 +15,11 @@
 a {
     text-decoration: none;
 }
+
+li {
+    list-style: none;
+}
+
 
 /* header */
 
@@ -145,6 +151,8 @@ main {
     position: relative;
 }
 
+/* video */
+
 main .video_contents_background {
     position: relative;
      background-color: #000;
@@ -252,6 +260,12 @@ main .video_sound_btn_active{
     border-radius: 50%;
 }
 
+/* special */
+
+main .special {
+    padding: 60px 0 20px 0;
+}
+
 main .special_title {
     display: flex;
     justify-content: space-between;
@@ -263,6 +277,8 @@ main .special_title h3 {
 }
 
 main .special_title h6 {
+    display: flex;
+    align-items: center;
     padding: 4px 32px 4px 15px;
     font-size: 14px;
     border: 1px solid #eee;
@@ -273,7 +289,7 @@ main .special_title h6 {
 main .special_img_text {
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 main .special_img{
@@ -281,12 +297,22 @@ main .special_img{
     height: 264px;
 }
 
-main .special_text div {
-    width: 365px;
+main .special_text .special_text_box {
     padding: 19px 25px 19px 19px;
     margin: 8px;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+}
+
+main .special_text .special_text_box_active {
+    padding: 19px 25px 19px 19px;
+    margin: 8px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+main .special_text div {
+    width: 440px;
 }
 
 main .special_text .suite_cinema, .cine_livingroom, .four_dx, .cine_de_chef {
@@ -294,6 +320,10 @@ main .special_text .suite_cinema, .cine_livingroom, .four_dx, .cine_de_chef {
     justify-content: space-between;
     align-items: center;
     padding: 19px 25px 19px 19px;
+}
+
+main .special_text strong {
+    font-size: 18px;
 }
 
 main .special_text span {
@@ -304,26 +334,121 @@ main .special_text span {
     border-radius: 5px;
 }
 
-main .chart_btn {
+/* giftcon_wrap */
+
+main .giftcon_wrap h4 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #222;
+}
+
+main .giftcon_wrap a {
+    padding: 2px 15px 3px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #f4f4f4;
+    border-radius: 11px;
+}
+
+main .movie_ticket, .gift_card, .combo {
+    width: 310px;
+    padding: 20px 20px 30px 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+}
+
+main .giftcon_wrap img {
+    width: 72px;
+    height: 76px;
+}
+
+main .gift_info {
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+main .gift_info span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #222;
+}
+
+main .gift_info strong {
+    font-weight: 700;
+    font-size: 16px;
+    color: #222;
+}
+
+main .giftcon_wrap {
     display: flex;
     justify-content: space-between;
-    margin: 50px 380px 0 250px;
+    padding: 60px 0 60px 0;
 }
 
-main .chart {
+main .giftcon_wrap_text {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main .chart h3 {
-    font-size: 26px;
+main .gift_card_list {
+    display: flex;
+    flex-direction: column;
 }
 
-main .chart h3:first-child {
-    padding-right: 30px;
-    font-weight: 700;
+main .gift_img_text {
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
 }
 
-main .chart h3:last-child {
+main .banner_bottom {
+    display: flex;
+    justify-content: center;
+    background-color: #FFA443;
+}
+
+
+
+/* footer */
+
+footer {
+    padding: 0 0 14px;
+    background-color: #f8f8f8;
+}
+
+footer .policy_list ul {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ebebeb;
+    padding: 23px 0 23px 0;
+}
+
+footer .policy_list ul li a {
     font-weight: 500;
+    font-size: 13px;
     color: #666;
+}
+
+footer .company_info_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0 23px 0;
+}
+
+footer .company_info p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.667em;
+}
+
+footer .familysite_wrap label {
+    font-size: 0;
+}
+
+footer .familysite_wrap select {
+    border: 1px solid #666;
+    background-color: transparent;
 }
