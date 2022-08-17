@@ -27,6 +27,26 @@ function stopVideo() {
     }
 }
 
+// video sound
+
+let soundBtn = document.getElementById('video_sound_btn')
+
+function soundOn() {
+    soundBtn.className = 'video_sound_btn_active'
+    video.muted = false
+    soundBtn.onclick = () => {
+        soundOff()
+    }
+}
+
+function soundOff() {
+    soundBtn.className = 'video_sound_btn'
+    video.muted = true
+    soundBtn.onclick = () => {
+        soundOn()
+    }
+}
+
 // special
 
 const images = [

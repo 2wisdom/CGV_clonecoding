@@ -242,6 +242,16 @@ main .video_sound_btn{
     border-radius: 50%;
 }
 
+main .video_sound_btn_active{
+    margin-left: 10px;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    background: transparent url(https://img.cgv.co.kr/R2014/images/main/ico/soundOn.png) center/18px scroll no-repeat;
+    border: 1px solid #979797;
+    border-radius: 50%;
+}
+
 main .special_title {
     display: flex;
     justify-content: space-between;
