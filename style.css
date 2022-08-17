@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
 }
 
 .container {
@@ -77,8 +78,8 @@ header .sub_nav ul li span {
 }
 
 header .main_nav_box {
-    border-top: 1px solid rgb(219, 219, 219);
-    border-bottom: 1px solid #fb4357;
+    border-top: 1px solid #eee;
+    border-bottom: 2px solid #fb4357;
     height: 40px;
     box-sizing: border-box;
 }
@@ -96,6 +97,7 @@ header .main_nav ul {
 header .main_nav ul li {
     margin: 10px;
     list-style: none;
+    padding-right: 30px;
 }
 
 header .main_nav a {
@@ -109,19 +111,15 @@ header .search {
 }
 
 header .search:before {
-    content: '|';
-    transform: scale(1,1.7);
-    /* display: inline-block; */
+    content: '⏐';
+    /* transform: scale(1,1.7); */
     color: #cacaca;
-    /* padding-top: 7px; */
 }
 
 header .search:after {
-    content: '|';
-    transform: scale(1,1.7);
-    /* display: inline-block; */
+    content: '⏐';
+    /* transform: scale(1,1.7); */
     color: #cacaca;
-    /* padding-top: 7px; */
 }
 
 header .search_icon {
@@ -137,12 +135,60 @@ header .search_text {
     border: 0;
     width: 180px;
     height: 25px;
+    padding-left: 7px;
+    font-size: 17px;
 }
 
 /* main */
 
 main {
     position: relative;
+}
+
+main .video_contents_background {
+    position: relative;
+     background-color: #000;
+}
+
+main .video_contents {
+    margin-bottom: 30px;
+}
+
+main .video_wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+main .video_wrap:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.25) 75%, #000 100%);
+    z-index: 2;
+}
+
+main .video_contents strong {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    top: 170px;
+    left: 0;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 72%);
+    z-index: 2;
+}
+
+main .video_contents span {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    top: 239px;
+    left: 0;
+    line-height: 1.450em;
+    z-index: 3;
 }
 
 main .special_title {
@@ -158,7 +204,7 @@ main .special_title h3 {
 main .special_title h6 {
     padding: 4px 32px 4px 15px;
     font-size: 14px;
-    border: 1px solid #e2e2e2;
+    border: 1px solid #eee;
     border-radius: 15px;
     background: transparent url(https://img.cgv.co.kr/R2014/images/common/ico/arrowR_8x13.png) calc(100% - 7px) center/8px 13px scroll no-repeat;
 }
@@ -178,8 +224,8 @@ main .special_text div {
     width: 365px;
     padding: 19px 25px 19px 19px;
     margin: 8px;
-    border-top: 1px solid rgb(202, 202, 202);
-    border-bottom: 1px solid rgb(202, 202, 202);
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 main .special_text .suite_cinema, .cine_livingroom, .four_dx, .cine_de_chef {
@@ -195,16 +241,6 @@ main .special_text span {
     color: #666;
     background-color: #f6f6f6;
     border-radius: 5px;
-}
-
-main .video_contents {
-    margin: 0 auto;
-    width: 1000px;
-    margin-bottom: 30px;
-}
-
-main .video_contents_background {
-    background-color: #000;
 }
 
 main .chart_btn {
