@@ -56,11 +56,11 @@ const images = [
     'https://img.cgv.co.kr//Front/Main/2021/1130/16382612660560.png',
 ]
 
-// function handleChangeSpcialImage(i) {
-//     document.querySelector('.special_img').src = images[i]
-//     document.querySelector('.special_img').setAttribute('alt', images[i])
-//     if(document.querySelector('.special_img').src == images[0]) {
-//       document.querySelector('.special_text_box').className =
-//         'special_text_box_active'
-//     }else if()
-// }
+function handleChangeSpcialImage(i) {
+    document.querySelector('.special_img').src = images[i]
+    document.querySelector('.special_img').setAttribute('alt', images[i])
+    // if(document.querySelector('.special_img').src == images[0]) {
+    //   document.querySelector('.special_text_box').className =
+    //     'special_text_box_active'
+    // }else if()
+}
